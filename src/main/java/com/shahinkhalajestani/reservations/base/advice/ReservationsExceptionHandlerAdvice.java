@@ -21,7 +21,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 @ControllerAdvice
 @RequiredArgsConstructor
 @Slf4j
-public class ResservationsExceptionHandlerAdvice extends ResponseEntityExceptionHandler {
+public class ReservationsExceptionHandlerAdvice extends ResponseEntityExceptionHandler {
 
 	private final Environment environment;
 
@@ -42,10 +42,10 @@ public class ResservationsExceptionHandlerAdvice extends ResponseEntityException
 	}
 
 	@ExceptionHandler(ServiceBasicException.class)
-	public final ResponseEntity<Object> handleBankTaskException(ServiceBasicException ex, WebRequest request) {
+	public final ResponseEntity<Object> handleServiceBasicException(ServiceBasicException ex, WebRequest request) {
 		var response = new ResponseModel(ex.getStatus());
 		response.setMessage(environment.getProperty(ex.getStatus().getDescription()));
 		return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).body(response);
 	}
-
 }
+
