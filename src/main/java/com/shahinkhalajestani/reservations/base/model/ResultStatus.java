@@ -13,7 +13,6 @@ public enum ResultStatus {
 
 	RECORD_NOT_FOUND(1002, "record.not.found"),
 	INVALID_PARAMETER(1003, "invalid.parameter"),
-	PRODUCT_NOT_ENOUGH(1004, "product.not.enough"),
 	;
 
 	private final int code;

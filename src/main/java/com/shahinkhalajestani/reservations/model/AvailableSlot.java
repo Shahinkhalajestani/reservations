@@ -18,9 +18,6 @@ public class AvailableSlot {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@Column(name = "slot_id", nullable = false, unique = true)
-	private String slotId;
-
 	@Column(name = "start_time", nullable = false)
 	private LocalDateTime startTime;
 

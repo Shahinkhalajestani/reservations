@@ -4,10 +4,10 @@ import com.shahinkhalajestani.reservations.base.exception.RecordNotFoundExceptio
 import com.shahinkhalajestani.reservations.dao.AvailableSlotDao;
 import com.shahinkhalajestani.reservations.model.AvailableSlot;
 import com.shahinkhalajestani.reservations.service.SlotService;
-import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @RequiredArgsConstructor

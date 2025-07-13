@@ -18,6 +18,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import org.springframework.data.annotation.Version;
+
 @Entity
 @Table(name = "reservations")
 @Getter
@@ -44,4 +46,7 @@ public class Reservation {
 
 	@Column(name = "created_at", nullable = false)
 	private LocalDateTime createdAt = LocalDateTime.now();
+
+	@Version
+	private long version;
 }

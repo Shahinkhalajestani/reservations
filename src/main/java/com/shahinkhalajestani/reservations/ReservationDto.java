@@ -2,6 +2,7 @@ package com.shahinkhalajestani.reservations;
 
 import java.time.LocalDateTime;
 
+import com.shahinkhalajestani.reservations.base.model.ResponseModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ReservationDto {
+public class ReservationDto extends ResponseModel {
 
 	private LocalDateTime from;
 
@@ -17,6 +18,6 @@ public class ReservationDto {
 
 	private String username;
 
-	private String slotId;
+	private String reservationId;
 
 }

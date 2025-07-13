@@ -29,4 +29,7 @@ public class User {
 
 	@Column(name = "created_at", nullable = false, columnDefinition = "DATETIME DEFAULT CURRENT_TIMESTAMP")
 	private LocalDateTime createdAt = LocalDateTime.now();
+
+	@Version
+	private long version;
 }
