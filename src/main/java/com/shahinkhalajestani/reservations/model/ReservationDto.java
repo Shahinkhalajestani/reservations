@@ -1,4 +1,4 @@
-package com.shahinkhalajestani.reservations;
+package com.shahinkhalajestani.reservations.model;
 
 import java.time.LocalDateTime;
 

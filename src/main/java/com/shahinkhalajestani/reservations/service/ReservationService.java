@@ -1,6 +1,6 @@
 package com.shahinkhalajestani.reservations.service;
 
-import com.shahinkhalajestani.reservations.ReservationDto;
+import com.shahinkhalajestani.reservations.model.ReservationDto;
 
 public interface ReservationService {
 

@@ -1,0 +1,64 @@
+{
+  "info": {
+    "name": "Slot Reservations API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Reserve Next Available Slot",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:7098/slot-reservations/api/reservations/reserve/{{username}}",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "7098",
+          "path": [
+            "slot-reservations",
+            "api",
+            "reservations",
+            "reserve",
+            "{{username}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Cancel Reservation",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:7098/slot-reservations/api/reservations/cancel/{{reservationId}}",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "7098",
+          "path": [
+            "slot-reservations",
+            "api",
+            "reservations",
+            "cancel",
+            "{{reservationId}}"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "username",
+      "value": "testuser"
+    },
+    {
+      "key": "reservationId",
+      "value": "your-reservation-id"
+    }
+  ]
+}

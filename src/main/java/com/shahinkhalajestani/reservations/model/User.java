@@ -2,6 +2,7 @@ package com.shahinkhalajestani.reservations.model;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
 
@@ -27,8 +28,9 @@ public class User {
 	@Column(nullable = false, length = 255)
 	private String password;
 
-	@Column(name = "created_at", nullable = false, columnDefinition = "DATETIME DEFAULT CURRENT_TIMESTAMP")
-	private LocalDateTime createdAt = LocalDateTime.now();
+	@Column(name = "created_at", nullable = false, updatable = false)
+	@CreationTimestamp
+	private LocalDateTime createdAt;
 
 	@Version
 	private long version;

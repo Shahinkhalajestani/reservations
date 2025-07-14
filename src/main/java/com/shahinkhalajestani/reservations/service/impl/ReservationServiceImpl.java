@@ -1,6 +1,6 @@
 package com.shahinkhalajestani.reservations.service.impl;
 
-import com.shahinkhalajestani.reservations.ReservationDto;
+import com.shahinkhalajestani.reservations.model.ReservationDto;
 import com.shahinkhalajestani.reservations.base.exception.RecordNotFoundException;
 import com.shahinkhalajestani.reservations.dao.ReservationDao;
 import com.shahinkhalajestani.reservations.service.ReservationService;

@@ -3,7 +3,7 @@ package com.shahinkhalajestani.reservations.service.mappers;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-import com.shahinkhalajestani.reservations.ReservationDto;
+import com.shahinkhalajestani.reservations.model.ReservationDto;
 import com.shahinkhalajestani.reservations.base.model.ResultStatus;
 import com.shahinkhalajestani.reservations.model.AvailableSlot;
 import com.shahinkhalajestani.reservations.model.Reservation;

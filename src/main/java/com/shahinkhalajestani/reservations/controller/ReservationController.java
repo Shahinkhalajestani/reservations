@@ -1,7 +1,7 @@
 package com.shahinkhalajestani.reservations.controller;
 
 import com.shahinkhalajestani.reservations.service.ReservationService;
-import com.shahinkhalajestani.reservations.ReservationDto;
+import com.shahinkhalajestani.reservations.model.ReservationDto;
 import com.shahinkhalajestani.reservations.base.model.ResponseModel;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
